@@ -1,16 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 
-public class Enum : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+namespace MVP
+{
+    public enum Scene
+    {
+        None = 0,
+        SplashScene = 1,
+        MenuScene = 2,
+        GamePlayScene = 3,
+    }
 }

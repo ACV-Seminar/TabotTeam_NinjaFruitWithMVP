@@ -1,19 +1,11 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class IModel : MonoBehaviour
+namespace MVP.Model
 {
-
-    // Use this for initialization
-    void Start()
+    public interface IDataModel
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        Dictionary<string, object> ToDictionary();
+        string ToString();
     }
 }
