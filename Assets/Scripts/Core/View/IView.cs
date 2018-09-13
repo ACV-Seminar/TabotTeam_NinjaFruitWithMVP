@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MVP.Model;
 
 namespace MVP
 {
     public interface IView
     {
         void BindData();
-        void BindModel<T>(T data);
+
+        void BindModel(IDataModel data);
     }
 }
